@@ -1,5 +1,5 @@
 <ul>
-    <li><a href="https://biocache.ala.org.au/occurrences/search?taxa=${tc?.taxonConcept?.nameString?.replace(" ","%20")}">ALA occurrences</a></li>
+    <li><a href="${grailsApplication.config.biocache.baseURL}/occurrences/search?taxa=${tc?.taxonConcept?.nameString?.replace(" ","%20")}">${grailsApplication.config.skin?.orgNameShort} occurrences</a></li>
     <li><a href="https://www.gbif.org/species/search?q=${tc?.taxonConcept?.nameString?.replace(" ","%20")}">GBIF</a></li>
     <li><a href="https://eol.org/search?q=${tc?.taxonConcept?.nameString?.replace(" ","%20")}&show_all=true">Encyclopaedia of Life</a></li>
     <li><a href="https://www.biodiversitylibrary.org/search?searchTerm=${tc?.taxonConcept?.nameString?.replace(" ","%20")}#/names">Biodiversity Heritage Library</a></li>
